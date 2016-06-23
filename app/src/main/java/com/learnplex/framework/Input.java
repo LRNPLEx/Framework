@@ -4,6 +4,8 @@ import java.util.List;
 
 /**
  * Created by David on 6/23/2016.
+ *
+ * Quick and dirty fix
  */
 public interface Input {
     public static class KeyEvent{
