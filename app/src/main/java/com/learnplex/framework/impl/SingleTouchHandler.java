@@ -62,7 +62,6 @@ public class SingleTouchHandler implements TouchHandler {
         }
     }
 
-    @Override
     public boolean isTouchDown(int pointer) {
         synchronized (this){
             if(pointer == 0)
@@ -78,14 +77,12 @@ public class SingleTouchHandler implements TouchHandler {
         }
     }
 
-    @Override
     public int getTouchY(int pointer) {
         synchronized (this) {
             return touchY;
         }
     }
 
-    @Override
     public List<Input.TouchEvent> getTouchEvents() {
         synchronized (this){
             int len = touchEvents.size();

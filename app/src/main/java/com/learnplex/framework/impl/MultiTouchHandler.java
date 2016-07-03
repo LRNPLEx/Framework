@@ -98,7 +98,7 @@ public class MultiTouchHandler implements TouchHandler{
         }
     }
 
-    @Override
+
     public boolean isTouchDown(int pointer) {
         synchronized (this){
             int index = getIndex(pointer);
@@ -109,7 +109,6 @@ public class MultiTouchHandler implements TouchHandler{
         }
     }
 
-    @Override
     public int getTouchX(int pointer) {
        synchronized (this){
             int index = getIndex(pointer);
@@ -120,7 +119,6 @@ public class MultiTouchHandler implements TouchHandler{
         }
     }
 
-    @Override
     public int getTouchY(int pointer) {
         synchronized (this){
             int index = getIndex(pointer);
@@ -131,7 +129,6 @@ public class MultiTouchHandler implements TouchHandler{
         }
     }
 
-    @Override
     public List<Input.TouchEvent> getTouchEvents() {
         synchronized (this){
             int len = touchEvents.size();
